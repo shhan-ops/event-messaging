@@ -1,0 +1,5 @@
+* @dohands/platform-team
+/.github/ @dohands/platform-team
+/package.json @dohands/platform-team
+/core/ @dohands/platform-team
+/adapters/ @dohands/platform-team

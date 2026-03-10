@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shhan-ops/event-messaging": ["core/index.ts"],
+      "@shhan-ops/event-messaging/adapters/redis": ["adapters/redis/index.ts"]
+    }
+  },
+  "include": ["core/**/*", "adapters/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "__tests__"]
+}

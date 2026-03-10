@@ -1,0 +1,59 @@
+site_name: event-messaging Docs
+site_description: Internal documentation for event-messaging
+site_url: https://shhan-ops.github.io/event-messaging/
+repo_url: https://github.com/shhan-ops/event-messaging
+repo_name: shhan-ops/event-messaging
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 홈: index.md
+  - 시작하기: getting-started.md
+  - 아키텍처:
+      - 개요: architecture/overview.md
+      - Protobuf 전략: architecture/protobuf-strategy.md
+  - 사용법:
+      - 발행(Publisher): usage/publishing.md
+      - 소비(Consumer): usage/consuming.md
+      - ConsumerRunner (v0.3.0): usage/consumer-runner.md
+      - 실제 서비스 적용 예제: usage/service-integration.md
+  - 운영:
+      - Redis 운영 Runbook: operations/redis-runbook.md
+      - 릴리즈 정책: operations/release-policy.md
+      - CI/CD: operations/ci-cd.md
+  - 트러블슈팅: troubleshooting.md
