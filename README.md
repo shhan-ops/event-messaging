@@ -5,16 +5,6 @@
 - Core API: `@shhan-ops/event-messaging`
 - Redis Adapter: `@shhan-ops/event-messaging/adapters/redis`
 
-## 문서
-
-- GitHub Pages: <https://shhan-ops.github.io/event-messaging/>
-- 로컬 문서 실행:
-
-```bash
-pip install -r requirements-docs.txt
-mkdocs serve
-```
-
 ## 빠른 사용 예시
 
 ```ts
