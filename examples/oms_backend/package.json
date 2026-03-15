@@ -1,0 +1,43 @@
+{
+  "name": "oms_backend",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "migration:up": "ts-node -r tsconfig-paths/register src/database/migrate.ts up",
+    "migration:down": "ts-node -r tsconfig-paths/register src/database/migrate.ts down",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main"
+  },
+  "dependencies": {
+    "@nestjs/common": "11.1.6",
+    "@nestjs/config": "4.0.2",
+    "@nestjs/core": "11.1.6",
+    "@nestjs/platform-express": "11.1.6",
+    "@nestjs/schedule": "6.0.0",
+    "@nestjs/sequelize": "11.0.0",
+    "@nestjs/swagger": "11.2.0",
+    "@shhan-ops/event-messaging": "file:../..",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "date-fns": "^2.29.3",
+    "ioredis": "^5.4.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "pg": "^8.16.3",
+    "sequelize": "6.37.7",
+    "sequelize-typescript": "2.1.6",
+    "swagger-ui-express": "^5.0.1",
+    "umzug": "^3.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "11.0.10",
+    "@nestjs/schematics": "11.0.7",
+    "@types/node": "^22.9.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  }
+}
